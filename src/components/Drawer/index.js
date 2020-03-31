@@ -32,10 +32,7 @@ const useStyles = makeStyles({
   }
 });
 
-{/* <ListItem button key={text}>
-<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-<ListItemText primary={text} />
-</ListItem> */}
+
 const data=[
     {
         name:'Home',
@@ -102,7 +99,7 @@ export default function TemporaryDrawer() {
             data.map(({name,Icono,link},i)=>(
                 <div key={"e"+i}>
                   {
-                    name == 'Chat'?
+                    name === 'Chat'?
                      
                     <ListItem button  onClick={()=>{window.location.href='http://gomsj.netlify.com/'}}>
                         <ListItemIcon>{Icono}</ListItemIcon> 

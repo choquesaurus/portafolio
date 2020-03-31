@@ -21,9 +21,9 @@ export default function  Proyects(){
        
 
         {
-            load==true?
+            load === true?
             <div style={{width:'100%',height:'100%',display:'flex',flexWrap:'wrap'}}>
-               {[... Array(20)].map(item=>(
+               {[...Array(20)].map(item=>(
                    <Esqueleto />
                ))}
             </div>

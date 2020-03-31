@@ -29,9 +29,9 @@ export default function ExpansionImagePortal() {
     <>
       <Tooltip title='Click en la imagen para expandirla :D '   placement='top'>            
             <img
+                alt='Image penging :D'
                 onClick={handleClickOpen}
                 src='https://data-examples-dev.s3.us-east-2.amazonaws.com/portal.jpg'
-                alt='Image penging'
             />
             </Tooltip>
       <Dialog
@@ -50,14 +50,6 @@ export default function ExpansionImagePortal() {
                 alt='Image penging'
             />
         </DialogContent>
-        {/* <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
-          </Button>
-        </DialogActions> */}
       </Dialog>
     </>
   );

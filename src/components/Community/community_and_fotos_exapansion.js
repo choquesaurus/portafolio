@@ -6,7 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 //import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import {Tooltip} from '@material-ui/core'
+import {Tooltip} from '@material-ui/core';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -31,6 +31,7 @@ export default function Communityandfotosexpasion() {
               <div className='images_Community_and_fotos' key={"echo"+i}>
               <Tooltip title='Click para expandir la imagen :D ' placement='top' arrow>
               <img
+                alt='echo'
                 onClick={handleClickOpen}
                 style={{width:'100%',height:'100%',objectFit:'cover',cursor:'pointer'}}
                 src={`https://data-examples-dev.s3.us-east-2.amazonaws.com/${e}.jpg`}
@@ -50,19 +51,12 @@ export default function Communityandfotosexpasion() {
         <DialogContent>
             
         <img
+                alt='texto decorativo'
                  style={{width:'100%',height:'100%',objectFit:'cover'}}
                 src={image}
-                alt='Image penging'
+                
             />
         </DialogContent>
-        {/* <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
-          </Button>
-        </DialogActions> */}
       </Dialog>
     </div>
   );

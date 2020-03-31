@@ -53,12 +53,12 @@ export default function Cardproyects({validatorSkeleton,title,repository,image,d
 
         <CardActions>
         {
-            repository == '' ?'':<Button size="small" color="primary" onClick={()=>{window.location.href=repository}}>
+            repository === '' ?'':<Button size="small" color="primary" onClick={()=>{window.location.href=repository}}>
             repositorio
             </Button>
         }        
         {
-            goproyect == undefined?'':<Button size="small" color="primary" onClick={()=>{window.location.href=goproyect}}>
+            goproyect === undefined?'':<Button size="small" color="primary" onClick={()=>{window.location.href=goproyect}}>
             demo
             </Button>
         }
