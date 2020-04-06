@@ -12,7 +12,7 @@ export default function  Proyects(){
     
     async function godata(){
         setloading(true)
-        const request=await fetch('https://portafoliodata.herokuapp.com/proyects');
+        const request=await fetch('https://portafolio-backend.herokuapp.com/proyects');
         const data=await request.json()
         setproyect(data)
         setloading(false)
