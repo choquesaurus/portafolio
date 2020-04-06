@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Cardproyects({validatorSkeleton,title,repository,image,description,goproyect}) {
+export default function Cardproyects({title,repository,image,description,goproyect}) {
   const classes = useStyles();
   
   return (

@@ -11,28 +11,24 @@ export default function  Proyects(){
     },[])
     
     async function godata(){
-        setloading(true)
+        await setloading(true)
         const request=await fetch('https://portafolio-backend.herokuapp.com/proyects');
         const data=await request.json()
-        setproyect(data)
-        setloading(false)
+        await setloading(false)
+        await setproyect(data)
+       
     }
     return <div className="proyects">
-       
-
         {
             load === true?
             <div style={{width:'100%',height:'100%',display:'flex',flexWrap:'wrap'}}>
-               {[...Array(20)].map(item=>(
-                   <Esqueleto />
-               ))}
+               {[...Array(20).keys()].map(item=>{
+                   return <Esqueleto  key={item.toString()}/>
+                })}
             </div>
-            
             :
-            proyects.map(({_id,image,title,description,repository,goproyect})=>(
-                    
-                <Cardproyects key={_id} validatorSkeleton={load}  title={title} image={image} description={description} repository={repository} goproyect={goproyect} />
-            
+            proyects.reverse().map(({_id,image,title,description,repository,goproyect})=>(
+                <Cardproyects key={_id}   title={title} image={image} description={description} repository={repository} goproyect={goproyect} />
                 ))
         }
       
