@@ -51,6 +51,7 @@ export default function FormContact() {
             label="Ingrese un pequeño mensaje"
             name='message'
             fullWidth
+            required
           />
         </DialogContent>
         <DialogActions>
