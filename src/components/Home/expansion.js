@@ -202,9 +202,8 @@ export default function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Si deseas  ir al chat global , puedes hacerlo dando click a este enlace :   
-            {/* <a href='https://gomsj.netlify.com/' target='_blank'>Link</a> */}
-            <Link href='https://gomsj.netlify.com/' target='_blank'> Link</Link>
+            Si deseas  ir al chat global , puedes hacerlo dando click a este enlace :  
+            <Link href='https://gomsj.choquesaurus.com/' target='_blank'> Link</Link>
           </Typography>
 
         </ExpansionPanelDetails>

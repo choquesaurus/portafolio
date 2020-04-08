@@ -42,7 +42,7 @@ const data=[
     {
         name:'Chat',
         Icono:<PersonRoundedIcon/>,
-        link:'https://gomsj.netlify.com/'        
+        link:'https://gomsj.choquesaurus.com/'        
     },
     {
         name:'Proyects',
@@ -101,7 +101,7 @@ export default function TemporaryDrawer() {
                   {
                     name === 'Chat'?
                      
-                    <ListItem button  onClick={()=>{window.location.href='http://gomsj.netlify.com/'}}>
+                    <ListItem button  onClick={()=>{window.location.href='https://gomsj.choquesaurus.com/'}}>
                         <ListItemIcon>{Icono}</ListItemIcon> 
                         <ListItemText primary={name}/>
                     </ListItem>

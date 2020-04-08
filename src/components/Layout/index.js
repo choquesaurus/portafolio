@@ -50,7 +50,7 @@ export default function  Layout({children}){
                         </Box>
                         
                         <Box className="navitems">
-                        <a href='http://gomsj.netlify.com/' className={clasess.itemsnavtitles} target='_blank' rel="noopener">
+                        <a href='https://gomsj.choquesaurus.com/' className={clasess.itemsnavtitles} target='_blank' rel="noopener">
                             <Tooltip title="Ingresa al chat global :D" placement="bottom" arrow >
                                 <Typography >
                                     Chat
