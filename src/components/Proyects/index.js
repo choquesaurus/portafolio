@@ -15,7 +15,7 @@ export default function  Proyects(){
         const request=await fetch('https://portafolio-backend.herokuapp.com/proyects');
         const data=await request.json()
         await setloading(false)
-        await setproyect(data)
+        setproyect(data)
        
     }
     return <div className="proyects">
