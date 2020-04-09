@@ -144,10 +144,11 @@ background: white;
 .images_Community_and_fotos img{
   transition: all 1.2s;
 }
-.images_Community_and_fotos:hover > img{
+.images_Community_and_fotos:hover > img {
   transform: scale(1.03);
   
 }
+
 @media (max-width:620px){
   .menutitle{
     visibility: hidden;

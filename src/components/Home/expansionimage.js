@@ -29,6 +29,8 @@ export default function ExpansionImagePortal() {
     <>
       <Tooltip title='Click en la imagen para expandirla :D '   placement='top'>            
             <img
+                
+                style={{cursor:'pointer'}}
                 alt='Image penging :D'
                 onClick={handleClickOpen}
                 src='https://data-examples-dev.s3.us-east-2.amazonaws.com/portal.jpg'
