@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import Cardproyects from './Carproyects'
-import Esqueleto from './skeleton';
+import Esqueleto from './skeleton'
+import {Helmet} from  'react-helmet'
 export default function  Proyects(){
     const [proyects,setproyect]=React.useState([])
     const [load,setloading]=React.useState(false)
     
-
     React.useEffect( ()=>{
          godata()
     },[])
@@ -16,9 +16,12 @@ export default function  Proyects(){
         const data=await request.json()
         await setloading(false)
         setproyect(data)
-       
     }
     return <div className="proyects">
+         <Helmet>
+            <meta name='description' content='En la seccion de proyectos encontraras mis ejemplos de prueba o experimentación y proyectos que eh realizado '/>
+            <title>Daniel | Proyectos </title>
+        </Helmet>
         {
             load === true?
             <div style={{width:'100%',height:'100%',display:'flex',flexWrap:'wrap'}}>
