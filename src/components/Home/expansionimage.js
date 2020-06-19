@@ -31,7 +31,7 @@ export default function ExpansionImagePortal() {
             <img
                 
                 style={{cursor:'pointer'}}
-                alt='Image penging :D'
+                alt=""
                 onClick={handleClickOpen}
                 src='https://data-examples-dev.s3.us-east-2.amazonaws.com/portal.jpg'
             />
@@ -49,7 +49,7 @@ export default function ExpansionImagePortal() {
         <img
                  style={{width:'100%',height:'100%',objectFit:'cover'}}
                 src={image}
-                alt='Image penging'
+                alt=""
             />
         </DialogContent>
       </Dialog>
