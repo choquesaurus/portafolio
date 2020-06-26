@@ -3,7 +3,7 @@ import '../../App.css'
 import ControlledExpansionPanels from './expansion'
 import ExpansionImagePortal from './expansionimage'
 import {Helmet} from 'react-helmet'
-import AlertDialogFlow from '../Layout/dialogflow';
+//import AlertDialogFlow from '../Layout/dialogflow';
 export default function  Home(){
     
     return <div className='homepage'>
