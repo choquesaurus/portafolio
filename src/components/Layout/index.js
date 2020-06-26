@@ -16,7 +16,7 @@ import Fondo from '../../assets/fondo.svg'
 import {Link} from 'react-router-dom'
 import TemporaryDrawer from '../Drawer/index'
 import FormContact from '../Contact/index'
-
+import AlertDialogFlow from './dialogflow';
 // import Icon from '@material-ui/core/Icon';
 
 const useStyles=makeStyles({
@@ -28,12 +28,15 @@ const useStyles=makeStyles({
 export default function  Layout({children}){
     const clasess=useStyles();
     return <>
+
+   
+         
         <object type="image/svg+xml" data={Fondo} style={{width:'100%',height:'100vh',position:'absolute',zIndex:'-1'}} >
     
        </object>
 
        <div style={{height:"75px"}}>
-        <AppBar color="transparent" style={{boxShadow:"none"}}>
+        <AppBar color="transparent" style={{boxShadow:"none", position:'relative',zIndex:'1' }}>
                 <Box className='menu'>
                     <Box className='logomenu'>
                         <TemporaryDrawer/>
@@ -88,10 +91,13 @@ export default function  Layout({children}){
         </AppBar>
         </div>
 
+        <AlertDialogFlow/>
+        
         <div className='bloque2'>
             <div className='centro_bloque2'>
                 {children}
             </div>
         </div>
+  
     </>
 }
