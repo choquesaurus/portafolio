@@ -4,7 +4,8 @@
  //import Contact from './Contact/index'
  import Home from './Home/index'
  import Proyects from './Proyects/index'
- import Layout from './Layout/index';
+ import Layout from './Layout/index'
+ import Error404 from './Error404/NotFound'
 
 export  {
     //About,
@@ -12,7 +13,8 @@ export  {
     //Contact,
     Home,
     Proyects,
-    Layout
+    Layout,
+    Error404
 }
 // module.exports = {
 //     About,
