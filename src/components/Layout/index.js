@@ -28,15 +28,10 @@ const useStyles=makeStyles({
 export default function  Layout({children}){
     const clasess=useStyles();
     return <>
-
-   
-         
-        <object type="image/svg+xml" data={Fondo} style={{width:'100%',height:'100vh',position:'absolute',zIndex:'-1'}} >
-    
-       </object>
-
+        <object type="image/svg+xml" data={Fondo} style={{width:'100%',height:'100vh',position:'absolute',zIndex:'-1'}}>
+        </object>
        <div style={{height:"75px"}}>
-        <AppBar color="transparent" style={{boxShadow:"none", position:'relative',zIndex:'1' }}>
+        <AppBar color="transparent" style={{boxShadow:"none" }}>
                 <Box className='menu'>
                     <Box className='logomenu'>
                         <TemporaryDrawer/>
@@ -87,11 +82,12 @@ export default function  Layout({children}){
                     </Box>
                     
                 </Box>        
-            
+                <AlertDialogFlow/>
         </AppBar>
+        
         </div>
 
-        <AlertDialogFlow/>
+      
         
         <div className='bloque2'>
             <div className='centro_bloque2'>
