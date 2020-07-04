@@ -65,7 +65,8 @@ export default function FormContact() {
       draggable: true
       });
 
-    const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
+      
+    const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
       method:'POST',
       headers:{
         "content-type":"application/json"

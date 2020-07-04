@@ -12,7 +12,7 @@ export default function  Proyects(){
     
     async function godata(){
         await setloading(true)
-        const request=await fetch('https://portafolio-backend.herokuapp.com/proyects');
+        const request=await fetch('https://portafolio-functions-backend.vercel.app/api/lista');
         const data=await request.json()
         await setloading(false)
         setproyect(data)
