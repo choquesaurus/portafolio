@@ -66,11 +66,11 @@ export default function FormContact() {
       });
 
 
-      //const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
+      const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
     // const {data:{message}} = await axios.post('https://portafolio-functions-backend.vercel.app/api/msj',{msj:mensaje,email:correo},
     // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
     //console.log(data)  
-    const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
+    //const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
     method:'POST',
       headers:{
         "Access-Control-Allow-Origin":'*',
