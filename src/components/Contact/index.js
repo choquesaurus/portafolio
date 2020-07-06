@@ -9,7 +9,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { Typography, Tooltip } from '@material-ui/core';
 import {ToastContainer,toast} from  'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-
+import  axios  from  'axios'
 export default function FormContact() {
   const [open, setOpen] = React.useState(false);
   const [emailerror,setEmailError] = React.useState(false);
@@ -66,18 +66,19 @@ export default function FormContact() {
       });
 
 
-      const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
-      
-    //const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
-
-     
-    method:'POST',
-      headers:{
-        "content-type":"application/json"
-      },
-      body:JSON.stringify({msj:mensaje,email:correo})
-    })
-      const {message} = await request.json();
+      //const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
+    const {data,data:{message}} = await axios.post('https://portafolio-functions-backend.vercel.app/api/msj',{msj:mensaje,email:correo})
+    console.log(data)  
+    // const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
+    // method:'POST',
+    //   headers:{
+    //     "Access-Control-Allow-Origin":'*',
+    //     "Access-Control-Allow-Credentials":true,
+    //     "content-type":"application/json"
+    //   },
+    //   body:JSON.stringify({msj:mensaje,email:correo})
+    // })
+    //   const {message} = await request.json();
       await toast.success(message, {
       position: "top-center",
       autoClose: 4000,
