@@ -67,18 +67,19 @@ export default function FormContact() {
 
 
       //const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
-    const {data,data:{message}} = await axios.post('https://portafolio-functions-backend.vercel.app/api/msj',{msj:mensaje,email:correo})
-    console.log(data)  
-    // const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
-    // method:'POST',
-    //   headers:{
-    //     "Access-Control-Allow-Origin":'*',
-    //     "Access-Control-Allow-Credentials":true,
-    //     "content-type":"application/json"
-    //   },
-    //   body:JSON.stringify({msj:mensaje,email:correo})
-    // })
-    //   const {message} = await request.json();
+    // const {data:{message}} = await axios.post('https://portafolio-functions-backend.vercel.app/api/msj',{msj:mensaje,email:correo},
+    // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
+    //console.log(data)  
+    const request = await fetch('https://portafolio-functions-backend.vercel.app/api/msj',{
+    method:'POST',
+      headers:{
+        "Access-Control-Allow-Origin":'*',
+        "Access-Control-Allow-Credentials":true,
+        "content-type":"application/json"
+      },
+      body:JSON.stringify({msj:mensaje,email:correo})
+    })
+      const {message} = await request.json();
       await toast.success(message, {
       position: "top-center",
       autoClose: 4000,
