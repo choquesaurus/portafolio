@@ -2,6 +2,7 @@ import React from 'react'
 import Cardproyects from './Carproyects'
 import Esqueleto from './skeleton'
 import {Helmet} from  'react-helmet'
+import axios from 'axios'
 export default function  Proyects(){
     const [proyects,setproyect]=React.useState([])
     const [load,setloading]=React.useState(false)
@@ -14,10 +15,11 @@ export default function  Proyects(){
         await setloading(true)
 
         //const request=await fetch('https://portafolio-backend.herokuapp.com/proyects');
-        const request=await fetch('https://portafolio-functions-backend.vercel.app/api/lista');
+        ///const request=await fetch('https://portafolio-functions-backend.vercel.app/api/lista');
 
-        const data=await request.json()
-        console.log(data)
+        //const data=await request.json()
+        const {data} = await axios.get('https://portafolio-functions-backend.vercel.app/api/lista')
+        //console.log(data)
         await setloading(false)
         setproyect(data)
     }
