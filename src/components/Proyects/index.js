@@ -23,7 +23,21 @@ export default function  Proyects(){
         await setloading(false)
         setproyect(data)
     }
-    return <div className="proyects">
+
+    // const ScrollFunctions=(params)=>{
+    //     let scrolltop=params.target.scrollTop;
+    //     var offsetTop = document.getElementById('padresito').offsetTop;//cuantos pixeles existen la distancia desde el inicio del body alta el inicio del div 
+    //     var height_div = document.getElementById('padresito').offsetHeight;
+    //     //var clientHeight = document.getElementById('padresito').clientHeight;
+        
+    //     console.log("Hellow",params.target.scrollTop)
+    //    }
+
+
+    return <div 
+    className="proyects"
+    //onScroll={ScrollFunctions}
+    >    
          <Helmet>
             <meta name='description' content='En la seccion de proyectos encontraras mis ejemplos de prueba o experimentación y proyectos que eh realizado '/>
             <title>Daniel | Proyectos </title>
@@ -36,8 +50,11 @@ export default function  Proyects(){
                 })}
             </div>
             :
-            proyects.reverse().map(({_id,image,title,description,repository,goproyect})=>(
-                <Cardproyects key={_id}   title={title} image={image} description={description} repository={repository} goproyect={goproyect} />
+            proyects.reverse().map(({_id,image,title,description,repository,goproyect},indice,)=>(
+                <Cardproyects   key={_id} 
+                    {...{title,image,description,repository,goproyect,indice}}
+                //  title={title} image={image} description={description} repository={repository} goproyect={goproyect}
+                  />
                 ))
         }
       

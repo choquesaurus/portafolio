@@ -1,13 +1,10 @@
 import React from 'react';
-//import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
-//import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-//import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import {Tooltip} from '@material-ui/core';
-
+import 'animate.css'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -24,17 +21,21 @@ export default function Communityandfotosexpasion() {
   const handleClose = () => {
     setOpen(false);
   };
-
+ 
   return (
     <div className='Community_and_fotos'>
-        {[...new Array(9).keys()].reverse().map((e,i)=>(
-              <div className='images_Community_and_fotos' key={"echo"+i}>
+        {[...new Array(9).keys()].reverse().map((item,indice)=>(
+              <div 
+              //className={indice % 2 === 0?'animate__animated animate__fast  animate__backInLeft':'animate__animated animate__fast animate__backInRight'}
+               className={`images_Community_and_fotos ${indice % 2 === 0?'animate__animated animate__fast  animate__backInLeft':'animate__animated animate__fast animate__backInRight'}`}
+              
+               key={"echo"+indice}>
               <Tooltip title='Click para expandir la imagen :D ' placement='top' arrow>
               <img
                 alt='echo'
                 onClick={handleClickOpen}
                 style={{width:'100%',height:'100%',objectFit:'cover',cursor:'pointer'}}
-                src={`https://data-examples-dev.s3.us-east-2.amazonaws.com/${e}.jpg`}
+                src={`https://data-examples-dev.s3.us-east-2.amazonaws.com/${item}.jpg`}
               />
                 </Tooltip>
           </div>
@@ -48,8 +49,7 @@ export default function Communityandfotosexpasion() {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle id="alert-dialog-slide-title">{"Imagen centrada , para una mejor vista  :D"}</DialogTitle>
-        <DialogContent>
-            
+        <DialogContent>         
         <img
                 alt='texto decorativo'
                  style={{width:'100%',height:'100%',objectFit:'cover'}}

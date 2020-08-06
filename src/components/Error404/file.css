@@ -8,7 +8,8 @@ body
 
 #handboy
 {
-   animation: swing ease-in-out 1.3s infinite alternate;
+   -webkit-animation: swing ease-in-out 1.3s infinite alternate;
+           animation: swing ease-in-out 1.3s infinite alternate;
     transform-origin: 98% 98%;
     transform-box: fill-box;
     
@@ -17,14 +18,16 @@ body
 
 #girllight
 {
-   animation: swing ease-in-out 1.3s infinite alternate;
+   -webkit-animation: swing ease-in-out 1.3s infinite alternate;
+           animation: swing ease-in-out 1.3s infinite alternate;
     transform-origin: 0% 97%;
     transform-box: fill-box;
 }
 
 #hairgirl
 {
-    animation: swinghair ease-in-out 1.3s infinite alternate;
+    -webkit-animation: swinghair ease-in-out 1.3s infinite alternate;
+            animation: swinghair ease-in-out 1.3s infinite alternate;
    transform-origin: 60% 0%;
     transform-box: fill-box;
   
@@ -38,6 +41,10 @@ body
 }
 
 /*************swing************/
+@-webkit-keyframes swing {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
 @keyframes swing {
     0% { transform: rotate(10deg); }
     100% { transform: rotate(-10deg); }
@@ -45,6 +52,10 @@ body
 
 
 /*************swing hair************/
+@-webkit-keyframes swinghair {
+    0% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}
 @keyframes swinghair {
     0% { transform: rotate(6deg); }
     100% { transform: rotate(-6deg); }

@@ -84,11 +84,7 @@ export default function  Layout({children}){
                 </Box>        
                 <AlertDialogFlow/>
         </AppBar>
-        
         </div>
-
-      
-        
         <div className='bloque2'>
             <div className='centro_bloque2'>
                 {children}

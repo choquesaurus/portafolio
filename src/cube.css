@@ -37,7 +37,8 @@
     margin: auto;
     position: relative;
     transform-style: preserve-3d;
-    animation: cubito 6s infinite  linear;
+    -webkit-animation: cubito 6s infinite  linear;
+            animation: cubito 6s infinite  linear;
     animation-direction: alternate-reverse;
         
 }
@@ -274,6 +275,15 @@
     z-index: 1000;
 }
 */
+
+@-webkit-keyframes cubito{
+    to{
+        transform: rotateX(0deg);
+    }
+    from{
+     		transform:rotateX(450deg) rotatey(650deg)rotateZ(645deg)
+    }
+}
 
 @keyframes cubito{
     to{
