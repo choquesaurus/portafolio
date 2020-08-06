@@ -13,16 +13,16 @@ import {Divider,Link} from '@material-ui/core';
 import CloudDoneIcon from '@material-ui/icons/CloudDone';
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '100%',
+    width: '100%'
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     flexBasis: '33.33%',
-    flexShrink: 0,
+    flexShrink: 0
   },
   secondaryHeading: {
     fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.secondary
   },
 }));
 const data=[
@@ -37,7 +37,7 @@ const data=[
   "Java",
   "JSP",
   "MySql",
-  "SqlServer",
+  "SqlServer"
 ]
 export default function ControlledExpansionPanels() {
   const classes = useStyles();
@@ -173,7 +173,7 @@ export default function ControlledExpansionPanels() {
             Esta es una lista de las tecnologias que tienen mi preferencia de gusto y dominación : <br/>
             <Divider/>
             {
-            data.map((item,i)=>((<Typography>
+            data.map((item,i)=>((<Typography key={i}>
 
               <CloudDoneIcon/>
               {" "+item}

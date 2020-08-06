@@ -4,7 +4,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import {Tooltip} from '@material-ui/core';
-import 'animate.css'
+import 'animate.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -26,7 +26,6 @@ export default function Communityandfotosexpasion() {
     <div className='Community_and_fotos'>
         {[...new Array(9).keys()].reverse().map((item,indice)=>(
               <div 
-              //className={indice % 2 === 0?'animate__animated animate__fast  animate__backInLeft':'animate__animated animate__fast animate__backInRight'}
                className={`images_Community_and_fotos ${indice % 2 === 0?'animate__animated animate__fast  animate__backInLeft':'animate__animated animate__fast animate__backInRight'}`}
               
                key={"echo"+indice}>
