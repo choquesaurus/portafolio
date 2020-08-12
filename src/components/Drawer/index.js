@@ -19,6 +19,7 @@ import SchoolRoundedIcon from '@material-ui/icons/SchoolRounded';
 import PeopleRoundedIcon from '@material-ui/icons/PeopleRounded';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import {Link} from 'react-router-dom';
+import {Tooltip} from  '@material-ui/core'
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -130,7 +131,9 @@ export default function TemporaryDrawer() {
     <div>
       {['left'].map(anchor => (
         <React.Fragment key={anchor}>
-          <MenuOpenRounded onClick={toggleDrawer(anchor, true)} style={{cursor:'pointer'}}/>
+           <Tooltip title="Click para abrir el panel" placement="bottom" arrow >
+          <MenuOpenRounded className="animate__animated animate__slow  animate__rubberBand" onClick={toggleDrawer(anchor, true)} style={{cursor:'pointer'}}/>
+          </Tooltip>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

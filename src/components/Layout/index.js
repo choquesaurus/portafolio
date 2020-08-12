@@ -40,7 +40,7 @@ export default function  Layout({children}){
                     <Box className="navitems">
                         <Link to='/' className={clasess.itemsnavtitles}>
                             <Tooltip title="inicio :D" placement="bottom" arrow >
-                                <Typography >
+                                <Typography  className="animate__animated  animate__fast animate__fadeInDown">
                                     Home
                                 </Typography>
                             </Tooltip>
@@ -50,7 +50,7 @@ export default function  Layout({children}){
                         <Box className="navitems">
                         <a href='https://gomsj.choquesaurus.com/' className={clasess.itemsnavtitles} target='_blank' rel="noopener noreferrer">
                             <Tooltip title="Ingresa al chat global :D" placement="bottom" arrow >
-                                <Typography >
+                                <Typography className="animate__animated animate__fast  animate__fadeInDown" >
                                     Chat
                                 </Typography>
                             </Tooltip>
@@ -60,7 +60,7 @@ export default function  Layout({children}){
                         <Box className="navitems">
                         <Link to='/proyects' className={clasess.itemsnavtitles}>
                             <Tooltip title="Proyectos " placement="bottom" arrow >
-                                <Typography >
+                                <Typography className="animate__animated  animate__fast animate__fadeInDown" >
                                     Proyects
                                 </Typography>
                             </Tooltip>
@@ -70,14 +70,14 @@ export default function  Layout({children}){
                         <Box className="navitems">
                         <Link to='/community' className={clasess.itemsnavtitles}>
                             <Tooltip title="Fotos y Comunidad" placement="bottom" arrow >
-                                <Typography >
+                                <Typography className="animate__animated animate__fast animate__fadeInDown"  >
                                      Fotos y Comunidad
                                 </Typography>
                             </Tooltip>
                         </Link>
                         </Box>
                         <Box className="navitems">
-                        <FormContact/>
+                            <FormContact/>
                         </Box>
                     </Box>
                     

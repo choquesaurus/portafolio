@@ -107,7 +107,7 @@ export default function FormContact() {
     <div>
       <ToastContainer/>
         <Tooltip title='Contactame' arrow>
-            <Typography onClick={handleClickOpen} style={{cursor:'pointer'}}>
+            <Typography onClick={handleClickOpen} style={{cursor:'pointer'}} className="animate__animated animate__fast  animate__fadeInDown">
                 Contacto
             </Typography>
         </Tooltip>
