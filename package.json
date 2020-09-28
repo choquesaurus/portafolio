@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^4.1.1",
     "axios": "^0.19.2",
+    "babel-preset-react-app": "^9.1.2",
     "browserslist": "^4.14.5",
     "caniuse-lite": "^1.0.30001137",
     "netlify-cli": "^2.64.1",
@@ -19,7 +20,8 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0",
-    "react-toastify": "^5.5.0"
+    "react-toastify": "^5.5.0",
+    "yarn": "^1.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +43,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "choquesaurus.com www.choquesaurus.com https://wwww.choquesaurus.com",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choquesaurus/portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choquesaurus/portafolio/issues"
+  },
+  "homepage": "https://github.com/choquesaurus/portafolio#readme"
 }
