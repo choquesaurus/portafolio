@@ -18,13 +18,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
-
           <Route exact path="/proyects" component={Proyects} />
           <Route exact path="/community" component={Community} />
-
           <Route path="*" component={Error404}></Route>
-
-          {/* <Route exact path='/about' component={About}/> */}
         </Switch>
       </Layout>
     </BrowserRouter>
