@@ -61,8 +61,10 @@ export default function FormContact() {
           "https://portafolio-functions-backend.vercel.app/api/sendmail",
           { msj: mensaje, email: correo },
           {
-            //headers: {"Access-Control-Allow-Origin": "*"},
-            crossDomain: true,
+            headers: {
+              "Access-Control-Allow-Origin": "https://choquesaurus.com",
+              crossDomain: true,
+            },
           }
         );
         // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
