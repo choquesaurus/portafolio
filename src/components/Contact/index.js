@@ -62,7 +62,7 @@ export default function FormContact() {
           { msj: mensaje, email: correo },
           {
             headers: {
-              "Access-Control-Allow-Origin": "https://choquesaurus.com",
+              "Access-Control-Allow-Origin": "*",
               crossDomain: true,
             },
           }
