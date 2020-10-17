@@ -59,7 +59,11 @@ export default function FormContact() {
           data: { message },
         } = await axios.post(
           "https://portafolio-functions-backend.vercel.app/api/sendmail",
-          { msj: mensaje, email: correo }
+          { msj: mensaje, email: correo },
+          {
+            //headers: {"Access-Control-Allow-Origin": "*"},
+            crossDomain: true,
+          }
         );
         // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
         //console.log(data)
