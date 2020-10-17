@@ -108,7 +108,7 @@ export default function Layout({ children }) {
               </Box>
             </Box>
           </Box>
-          <AlertDialogFlow />
+          {/* <AlertDialogFlow /> */}
         </AppBar>
       </div>
       <div className="bloque2">

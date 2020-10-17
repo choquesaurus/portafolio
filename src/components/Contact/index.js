@@ -58,7 +58,7 @@ export default function FormContact() {
         const {
           data: { message },
         } = await axios.post(
-          "https://portafolio-functions-backend.vercel.app/api/msj",
+          "https://portafolio-functions-backend.vercel.app/api/sendmail",
           { msj: mensaje, email: correo }
         );
         // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
