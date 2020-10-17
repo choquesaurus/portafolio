@@ -13,7 +13,7 @@ import Fondo from "../../assets/fondo.svg";
 import { Link } from "react-router-dom";
 import TemporaryDrawer from "../Drawer/index";
 import FormContact from "../Contact/index";
-import AlertDialogFlow from "./dialogflow";
+//import AlertDialogFlow from "./dialogflow";
 // import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
@@ -108,7 +108,7 @@ export default function Layout({ children }) {
               </Box>
             </Box>
           </Box>
-          <AlertDialogFlow />
+          {/* <AlertDialogFlow /> */}
         </AppBar>
       </div>
       <div className="bloque2">
