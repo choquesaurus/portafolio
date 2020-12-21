@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Link} from "@material-ui/core"
 import 'animate.css'
 const useStyles = makeStyles({
   // root: {
@@ -58,13 +59,27 @@ export default function Cardproyects({title,repository,image,description,goproye
 
         <CardActions >
         {
-            repository === '' ?'':<Button size="small" color="primary" onClick={()=>{window.location.href=repository}} >
+            repository === '' ?'':<Button size="small" color="primary"><Link
+            style={{textDecoration:"none"}}
+            rel="noopener"
+            href={repository}
+            target="_blank"
+            //onClick={()=>{window.location.href=repository}} 
+            >
             repositorio
+            </Link>
             </Button>
         }        
         {
-            goproyect === undefined?'':<Button size="small" color="primary" onClick={()=>{window.location.href=goproyect}} >
+            goproyect === undefined?'':<Button size="small" color="primary"><Link
+            style={{textDecoration:"none"}}
+            rel="noopener"
+            href={goproyect}
+            target="_blank"
+            //onClick={()=>{window.location.href=repository}} 
+            >
             demo
+            </Link>
             </Button>
         }
         
