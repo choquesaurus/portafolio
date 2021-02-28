@@ -92,7 +92,8 @@ export default function TemporaryDrawer() {
         <CardActionArea>
           <CardMedia
             component="img"
-            image="https://data-examples-dev.s3.us-east-2.amazonaws.com/portal.jpg"
+            image="https://i.ibb.co/y8Ff2VP/portal.jpg"
+            //image="https://data-examples-dev.s3.us-east-2.amazonaws.com/portal.jpg"
             height="170"
             alt="Image pending"
             title="foto grupal :D"
