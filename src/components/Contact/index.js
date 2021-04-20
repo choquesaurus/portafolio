@@ -55,10 +55,13 @@ export default function FormContact() {
         });
 
         //const request = await fetch('https://portafolio-backend.herokuapp.com/send',{
+        const endpoint_mail= 'https://api.choquesaurus.tk/api/sendemail'
+        //const endpoint_mail= 'https://portafolio-functions-backend.vercel.app/api/sendemail'
+        
         const {
           data: { message },
         } = await axios.post(
-          "https://portafolio-functions-backend.vercel.app/api/sendemail",
+          endpoint_mail,
           { msj: mensaje, email: correo }
         );
         // {headers:{"Access-Control-Allow-Origin":'*',"Access-Control-Allow-Credentials":true}})
