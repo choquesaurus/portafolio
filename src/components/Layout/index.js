@@ -56,7 +56,7 @@ export default function Layout({ children }) {
 
               <Box className="navitems">
                 <a
-                  href="https://gomsj.choquesaurus.com/"
+                  href="https://gomsj.choquesaurus.tk/"
                   className={clasess.itemsnavtitles}
                   target="_blank"
                   rel="noopener noreferrer"
