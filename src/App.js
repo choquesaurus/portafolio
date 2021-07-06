@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/error" component={Error404}></Route>
+        <Route className="" path="/error" component={Error404}></Route>
         {/* <Route path="/curriculum" component={Curriculum}></Route> */}
         <Layout>
           <Switch>
