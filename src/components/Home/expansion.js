@@ -5,10 +5,10 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import FacebookIcon from '@material-ui/icons/Facebook';
+// import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+// import YouTubeIcon from '@material-ui/icons/YouTube';
+// import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Divider,Link} from '@material-ui/core';
 import CloudDoneIcon from '@material-ui/icons/CloudDone';
 const useStyles = makeStyles(theme => ({
@@ -60,7 +60,7 @@ export default function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Hola  mi nombre completo  es Daniel Choquecahuana :D
+            Hola mi nombres es Daniel !!!
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -94,8 +94,9 @@ export default function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Mi correo de contacto es daniechoque159@gmail.com . 
-            Si deseas comunicarte conmigo ante un duda , comentario o freelance puedes hacer por ese correo indicado
+            {/* Mi correo de contacto es daniechoque159@gmail.com . 
+            Si deseas comunicarte conmigo ante un duda , comentario o freelance puedes hacer por ese correo indicado */}
+            No disponible por el momento
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -112,24 +113,24 @@ export default function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Encuentrame  en las siguientes redes :
+            Encuentrame en las siguientes redes :
           </Typography>
           <br/>
          
-                    <a href="https://www.facebook.com/FreeAlive">
+                    {/* <a href="https://www.facebook.com/FreeAlive">
                        <FacebookIcon fontSize='large' color='primary'/>  
                        
-                    </a>
+                    </a> */}
                     <a href="https://github.com/WasauskyOK">
                         <GitHubIcon fontSize='large' style={{color:'black'}}/>
                      
                     </a>
-                    <a href="https://www.youtube.com/channel/UCB2-joAQZX83U6E7ajOwFfw?view_as=subscriber">
+                    {/* <a href="https://www.youtube.com/channel/UCB2-joAQZX83U6E7ajOwFfw?view_as=subscriber">
                     <YouTubeIcon fontSize='large' color='error'/>
                     </a>
                     <a href="https://www.linkedin.com/in/daniel-nazario-choquecahuana-quispe-6273a6194/">
                     <LinkedInIcon fontSize='large'/>
-                    </a>
+                    </a> */}
               
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -151,7 +152,6 @@ export default function ControlledExpansionPanels() {
           <br/>
           Soy parte de la comunidad de programadores HackSpace la cual su objetivo principal es generar entornos para la creación por medio de la tecnología basados en el crecimiento en comunidad y el auto-aprendizaje.
           <br/>
-          Eh brindado clases en el colegio Telesforo Catacora ,  Javascript , HTML5 y CSS3 con el fin de que puedan crear su primera pagina web .                   
           </Typography>
 
         </ExpansionPanelDetails>
