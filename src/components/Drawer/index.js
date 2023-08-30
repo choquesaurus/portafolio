@@ -18,7 +18,7 @@ import PersonRoundedIcon from "@material-ui/icons/PersonRounded";
 import SchoolRoundedIcon from "@material-ui/icons/SchoolRounded";
 import PeopleRoundedIcon from "@material-ui/icons/PeopleRounded";
 import WorkIcon from "@material-ui/icons/Work";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+// import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import { Link } from "react-router-dom";
 import { Tooltip } from "@material-ui/core";
 const useStyles = makeStyles({
@@ -124,18 +124,7 @@ export default function TemporaryDrawer() {
           )}
         </div>
       ))}
-      <ListItem
-        button
-        onClick={() => {
-          window.location.href =
-            "https://wa.me/51924741683?text=Hola%20me%20parece%20genial%20tu%20portafolio,%20podemos%20estar%20en%20contacto";
-        }}
-      >
-        <ListItemIcon>
-          <WhatsAppIcon />
-        </ListItemIcon>
-        <ListItemText primary="Contactame :D" />
-      </ListItem>
+   
     </div>
   );
 
